@@ -11,7 +11,7 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://www.maap.edu.ph",
   image: {
-    domains: ["images.unsplash.com", www.maap.edu.ph],
+    domains: ["images.unsplash.com", "www.maap.edu.ph"],
   },
   // i18n: {
   //   defaultLocale: "en",
