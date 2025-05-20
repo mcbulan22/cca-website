@@ -9,7 +9,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://maap.edu.ph",
+  site: "https://screwfast.uk",
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -33,7 +33,7 @@ export default defineConfig({
       },
     },
   }), starlight({
-    title: "Center for Competency Assessment",
+    title: "ScrewFast Docs",
     defaultLocale: "root",
     // https://github.com/withastro/starlight/blob/main/packages/starlight/CHANGELOG.md
     // If no Astro and Starlight i18n configurations are provided, the built-in default locale is used in Starlight and a matching Astro i18n configuration is generated/used.
