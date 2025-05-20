@@ -9,9 +9,9 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://www.maap.edu.ph",
+  site: "https://maap.edu.ph",
   image: {
-    domains: ["images.unsplash.com", "www.maap.edu.ph"],
+    domains: ["images.unsplash.com"],
   },
   // i18n: {
   //   defaultLocale: "en",
@@ -29,6 +29,7 @@ export default defineConfig({
       defaultLocale: "en", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
       locales: {
         en: "en", // The `defaultLocale` value must present in `locales` keys
+        fr: "fr",
       },
     },
   }), starlight({
@@ -44,35 +45,45 @@ export default defineConfig({
         label: "English",
         lang: "en",
       },
+      de: { label: "Deutsch", lang: "de" },
+      es: { label: "Español", lang: "es" },
+      fa: { label: "Persian", lang: "fa", dir: "rtl" },
+      fr: { label: "Français", lang: "fr" },
+      ja: { label: "日本語", lang: "ja" },
+      "zh-cn": { label: "简体中文", lang: "zh-CN" },
     },
     // https://starlight.astro.build/guides/sidebar/
     sidebar: [
       {
-        label: "Assessment Guides",
+        label: "Quick Start Guides",
+        translations: {
+          de: "Schnellstartanleitungen",
+          es: "Guías de Inicio Rápido",
+          fa: "راهنمای شروع سریع",
+          fr: "Guides de Démarrage Rapide",
+          ja: "クイックスタートガイド",
+          "zh-cn": "快速入门指南",
+        },
         autogenerate: { directory: "guides" },
       },
       {
-        label: "Assessment Tools",
+        label: "Tools & Equipment",
         items: [
-          { label: "Assessment Guidelines", link: "tools/assessment-guidelines/" },
-          { label: "Competency Standards", link: "tools/competency-standards/" },
+          { label: "Tool Guides", link: "tools/tool-guides/" },
+          { label: "Equipment Care", link: "tools/equipment-care/" },
         ],
       },
       {
-        label: "Assessment Services",
-        autogenerate: { directory: "services" },
+        label: "Construction Services",
+        autogenerate: { directory: "construction" },
       },
       {
-        label: "Resources",
-        autogenerate: { directory: "resources" },
+        label: "Advanced Topics",
+        autogenerate: { directory: "advanced" },
       },
     ],
     social: [
-      { 
-        label: "MAAP Website",
-        href: "https://www.maap.edu.ph",
-        icon: "external",
-      },
+      { icon: "github", label: "GitHub", href: "https://github.com/mearashadowfax/ScrewFast" },
     ],
     disable404Route: true,
     customCss: ["./src/assets/styles/starlight.css"],
