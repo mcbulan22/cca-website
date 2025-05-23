@@ -1,22 +1,22 @@
 [
   {
-    "heading": "Dedicated Teams",
-    "content": "Benefit from our committed teams who ensure your success is personal. Count on expert guidance and exceptional results throughout your project journey.",
-    "svg": "groups"
-  },
-  {
-    "heading": "Simplicity and Affordability",
-    "content": "Find easy-to-use, affordable solutions with ScrewFast's line of tools and equipment. Our products make procurement simple and keep projects within budget.",
+    "heading": "Competency-Based Assessment",
+    "content": "We deliver industry-aligned assessments that accurately measure student proficiency and readiness for real-world maritime challenges.",
     "svg": "verified"
   },
   {
-    "heading": "Comprehensive Documentation",
-    "content": "Integrate with ease using ScrewFast's exhaustive guides and libraries. Achieve seamless product adoption with our full suite of documentation designed for your success.",
-    "svg": "books"
+    "heading": "Dedicated Academic Support",
+    "content": "Our team is committed to student success, providing expert guidance throughout the assessment and training journey.",
+    "svg": "groups"
   },
   {
-    "heading": "User-Centric Design",
-    "content": "Experience the difference with ScrewFast's user-focused design — where functionality meets practicality for an enhanced work experience.",
+    "heading": "Accessible and Transparent Processes",
+    "content": "Our systems are designed to be clear, efficient, and easy to navigate — ensuring all stakeholders understand the assessment procedures.",
     "svg": "frame"
+  },
+  {
+    "heading": "Comprehensive Resources and Documentation",
+    "content": "From rubrics to instructional guides, we provide complete and accessible documentation to support students and faculty alike.",
+    "svg": "books"
   }
 ]
