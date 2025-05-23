@@ -67,13 +67,13 @@ const avatarSrcs: Array<string> = [
   />
 
   <FeaturesNavs
-    title=`Upholding <span class="text-yellow-500 dark:text-yellow-400">Core Principles</span>in Assessment at the Center for Competency Assessment.`
+    title=`Upholding <span class="text-yellow-500 dark:text-yellow-400">Core Principles</span> in Assessment at the Center for Competency Assessment.`
     tabs={[
       {
         heading: "Fair Assessment",
         content:
           "We ensure all assessments are equitable and unbiased, providing every student an equal opportunity to demonstrate their competence. Fair assessment respects diversity, eliminates barriers, and aligns with ethical standards.",
-        svg: "scale",
+        svg: "groups",
         src: tools,
         alt: "A symbolic representation of fairness in assessment",
         first: true,
@@ -82,7 +82,7 @@ const avatarSrcs: Array<string> = [
         heading: "Valid Assessment",
         content:
           "Our assessments accurately measure the intended learning outcomes and competencies. We use clearly defined criteria and evidence-based practices to ensure that what we assess truly reflects student ability and program goals.",
-        svg: "check-circle",
+        svg: "checkCircle",
         src: dashboard,
         alt: "A checklist or validated document representing validity",
         second: true,
@@ -134,14 +134,18 @@ const avatarSrcs: Array<string> = [
       },
     ]}
   />
-
+  {false && (
   <PricingSection pricing={pricing} />
+  )}
 
+  {false && (
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
-
+  )}
+  {false && (
   <HeroSectionAlt
     title="Let's Build Together"
     subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
     url="https://github.com/mearashadowfax/ScrewFast"
   />
+  )}
 </MainLayout>
