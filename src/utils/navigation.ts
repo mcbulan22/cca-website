@@ -6,7 +6,6 @@ const navBarLinks = [
   { name: "Services", url: "/services" },
   { name: "Announcement", url: "/blog" },
   { name: "Resources", url: "/products" },
-  { name: "AI Agent", url: "/ai-agent" },
   { name: "Contact", url: "/contact" },
 ];
 // An array of links for footer
@@ -25,6 +24,7 @@ const footerLinks = [
       { name: "Announcements", url: "/blog" },
       { name: "Assessment Services", url: "/services" },
       { name: "Resources", url: "/products" },
+      { name: "CCA AI Agent", url: "https://agent.jotform.com/0195da88a12f709ba586ecda4f87e62878eb" },
     ],
   },
 ];
