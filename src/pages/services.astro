@@ -36,61 +36,70 @@ interface Article {
 const articles: Article[] = [
   {
     isRightSection: true,
-    title: "Delivering Expert Guidance",
+    title: "Request Assessment for Your Cadets",
     subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
+      "Need a custom-designed assessment tailored for your cadets’ training outcomes? We specialize in creating formative and summative assessments aligned with maritime standards. Whether written, practical, or simulation-based, you can request support directly from CCA to ensure your cadets are evaluated accurately and fairly.",
     single: false,
     imgOne: blueprints,
-    imgOneAlt: "Blueprints and digital tablet with construction plans.",
+    imgOneAlt: "Assessment design plans and documents",
     imgTwo: personWorking,
-    imgTwoAlt: "Person working in the office",
+    imgTwoAlt: "Assessor working at desk with documents",
+    btnExists: true,
+    btnTitle: "Request an Assessment",
+    btnURL: "#request-form",
   },
   {
     isRightSection: false,
-    title: "Transforming Designs into Reality",
+    title: "MAAP-SEAS Account Management",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
+      "If you need assistance with your MAAP-SEAS (Moodle) account — be it creating new access for cadets, resetting passwords, or updating course enrollments — our team is here to help. This service ensures seamless participation in online assessments and coursework hosted on our learning platform.",
     img: beforeAfter,
-    imgAlt: "Construction site before and after",
+    imgAlt: "User interface showing Moodle dashboard",
     btnExists: true,
-    btnTitle: "Learn More",
-    btnURL: "#",
+    btnTitle: "Manage Accounts",
+    btnURL: "#account-support",
   },
   {
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
+    title: "Request Answer Sheets and Scoring Data",
     subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "Faculty members may request access to student submissions and answer sheets for both written and digital assessments. Our team provides secure, trackable delivery of these materials to support your grading and feedback process. Ensure transparency and efficiency in performance reviews.",
     single: false,
     imgOne: constructionWorkers,
-    imgOneAlt: "Construction workers orchestrating a project",
+    imgOneAlt: "Teacher reviewing answer sheets",
     imgTwo: aerialView,
-    imgTwoAlt: "Aerial view of managed construction",
+    imgTwoAlt: "Student writing during assessment",
+    btnExists: true,
+    btnTitle: "Access Answer Sheets",
+    btnURL: "#answer-sheets",
   },
   {
     isRightSection: false,
-    title: "Ensuring Long-lasting Performance",
+    title: "Digital Marking Sheets for Practical Assessments",
     subTitle:
-      "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      "We now deliver secure, digital marking sheets via Tally.so for practical assessments. Faculty receive results through email, while access to the form is password-protected to ensure integrity. For password inquiries, kindly coordinate with the course’s assigned assessor.",
     img: usingTools,
-    imgAlt:
-      "Man in orange and black vest wearing white helmet holding yellow and black power tool",
+    imgAlt: "Digital form interface for practical scoring",
+    btnExists: true,
+    btnTitle: "Use Marking Sheet",
+    btnURL: "#marking-sheets",
   },
   {
     isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
+    title: "Contact Your Course Assessor",
     subTitle:
-      "For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "Need to follow up on a request or coordinate directly with an assessor? You may send an email or chat with the assigned assessor to clarify procedures, request passwords for marking sheets, or align on course-specific updates. We encourage open communication to ensure successful outcomes.",
     single: false,
     imgOne: progressBuilding,
-    imgOneAlt: "In progress building structure",
+    imgOneAlt: "Person typing an email on laptop",
     imgTwo: underConstruction,
-    imgTwoAlt: "Brown and gray building under construction",
+    imgTwoAlt: "Assessor talking with faculty via chat",
     btnExists: true,
-    btnTitle: "Read more",
-    btnURL: "#",
+    btnTitle: "Contact Assessor",
+    btnURL: "#contact-assessor",
   },
 ];
+
 
 const pageTitle: string = `Services | ${SITE.title}`;
 const metaDescription =
@@ -122,10 +131,10 @@ const ogTitle = "Expert Consultation Services | ScrewFast";
 >
   {/* MainSection is the introductory section of the page, it also contains a CTA button */}
   <MainSection
-    title="Uniting Expertise with Your Vision"
-    subTitle="At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
+    title="Your Partner in Maritime Assessment and Support"
+    subTitle="At the Center for Competency Assessment (CCA), we are committed to supporting maritime faculty and institutions in delivering world-class assessments. From designing customized evaluations for cadets to managing accounts on MAAP-SEAS, we provide efficient, secure, and faculty-friendly services. Our team also facilitates digital access to practical assessment results, including secure, password-protected marking sheets and score delivery via email. Ready to request an assessment for your cadets or access related services? Use the button below to get started."
     btnExists={true}
-    btnTitle="Schedule a Consultation"
+    btnTitle="Request an Assessment"
     btnURL="#"
   />
   {/* RightSection and LeftSection contain details about various services along with pertinent imagery.
