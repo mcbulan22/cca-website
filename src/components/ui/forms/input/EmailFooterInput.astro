@@ -1,8 +1,6 @@
-<!-- Inside your Astro component (e.g., FooterForm.astro) -->
-
 <div class="mt-4 w-full rounded-lg bg-neutral-200 p-4 dark:bg-neutral-800">
   <iframe
-    data-tally-src="https://tally.so/embed/wLy8Bp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+    src="https://tally.so/embed/wLy8Bp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
     loading="lazy"
     width="100%"
     height="176"
@@ -13,29 +11,3 @@
     class="rounded-lg border border-neutral-300 dark:border-neutral-700"
   ></iframe>
 </div>
-
-<!-- Inline script to load Tally embeds -->
-<script is:inline>
-  const d = document;
-  const w = "https://tally.so/widgets/embed.js";
-
-  function loadTally() {
-    if (typeof Tally !== "undefined") {
-      Tally.loadEmbeds();
-    } else {
-      d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(el => {
-        el.src = el.dataset.tallySrc;
-      });
-    }
-  }
-
-  if (typeof Tally !== "undefined") {
-    loadTally();
-  } else if (!d.querySelector(`script[src="${w}"]`)) {
-    const s = d.createElement("script");
-    s.src = w;
-    s.onload = loadTally;
-    s.onerror = loadTally;
-    d.body.appendChild(s);
-  }
-</script>
