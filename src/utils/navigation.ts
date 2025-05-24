@@ -13,8 +13,8 @@ const footerLinks = [
   {
     section: "Impotant Links",
     links: [
-      { name: "MAAP-SEAS inside-campus link", url: "http://192.168.1.20/seas/?redirect=0" },
-      { name: "MAAP-SEAS outside-campus link", url: "http://203.177.24.69/seas/login/index.php" },
+      { name: "MAAP-SEAS [Inside]", url: "http://192.168.1.20/seas/?redirect=0" },
+      { name: "MAAP-SEAS [Outside]", url: "http://203.177.24.69/seas/login/index.php" },
       { name: "MAAP Official Website", url: "https://maap.edu.ph/" },
     ],
   },
@@ -24,7 +24,16 @@ const footerLinks = [
       { name: "Announcements", url: "/blog" },
       { name: "Assessment Services", url: "/services" },
       { name: "Resources", url: "/products" },
-      { name: "CCA AI Agent", url: "https://agent.jotform.com/0195da88a12f709ba586ecda4f87e62878eb" },
+      { name: "CCA AI Agent", url: "https://agent.jotform.com/0195da88a12f709ba586ecda4f87e62878eb", target: "_blank" },
+    ],
+  },
+  {
+    section: "Contact Details",
+    links: [
+      { name: "Email: cca@maap.edu.ph", url: "mailto:cca@maap.edu.ph" },
+      { name: "Alt Email: marlon.bulan@maap.edu.ph", url: "mailto:marlon.bulan@maap.edu.ph" },
+      { name: "Phone: 4085", url: "tel:4085" },
+      { name: "Phone: 4056", url: "tel:4056" },
     ],
   },
 ];
