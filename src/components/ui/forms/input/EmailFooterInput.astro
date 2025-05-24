@@ -1,6 +1,4 @@
----
-// No need for any TypeScript or props unless you're customizing around it
----
+<!-- Inside your Astro component (e.g., FooterForm.astro) -->
 
 <div class="mt-4 w-full rounded-lg bg-neutral-200 p-4 dark:bg-neutral-800">
   <iframe
@@ -12,29 +10,32 @@
     marginheight="0"
     marginwidth="0"
     title="Subscriber's Email"
-    class="rounded-lg border-2 border-neutral-300 dark:border-neutral-700"
+    class="rounded-lg border border-neutral-300 dark:border-neutral-700"
   ></iframe>
 </div>
 
+<!-- Inline script to load Tally embeds -->
 <script is:inline>
-  var d = document,
-    w = "https://tally.so/widgets/embed.js",
-    v = function () {
-      if (typeof Tally !== "undefined") {
-        Tally.loadEmbeds();
-      } else {
-        d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
-          e.src = e.dataset.tallySrc;
-        });
-      }
-    };
+  const d = document;
+  const w = "https://tally.so/widgets/embed.js";
+
+  function loadTally() {
+    if (typeof Tally !== "undefined") {
+      Tally.loadEmbeds();
+    } else {
+      d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(el => {
+        el.src = el.dataset.tallySrc;
+      });
+    }
+  }
+
   if (typeof Tally !== "undefined") {
-    v();
-  } else if (d.querySelector('script[src="' + w + '"]') == null) {
-    var s = d.createElement("script");
+    loadTally();
+  } else if (!d.querySelector(`script[src="${w}"]`)) {
+    const s = d.createElement("script");
     s.src = w;
-    s.onload = v;
-    s.onerror = v;
+    s.onload = loadTally;
+    s.onerror = loadTally;
     d.body.appendChild(s);
   }
 </script>
