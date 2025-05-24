@@ -4,25 +4,26 @@
 const navBarLinks = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
+  { name: "Announcement", url: "/blog" },
+  { name: "Resources", url: "/products" },
   { name: "Contact", url: "/contact" },
 ];
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
+    section: "Impotant Links",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "MAAP-SEAS inside-campus link", url: "http://192.168.1.20/seas/?redirect=0" },
+      { name: "MAAP-SEAS outside-campus link", url: "http://203.177.24.69/seas/login/index.php" },
+      { name: "MAAP Official Website", url: "https://maap.edu.ph/" },
     ],
   },
   {
-    section: "Company",
+    section: "Quick Links",
     links: [
-      { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "Announcements", url: "/blog" },
+      { name: "Assessment Services", url: "/services" },
+      { name: "Resources", url: "/products" },
     ],
   },
 ];
