@@ -1,16 +1,16 @@
 ---
-import MainLayout from "@layouts/MainLayout.astro";
-import MainSection from "@components/sections/MainSection.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import MainSection from "../components/ui/blocks/MainSection.astro";
 ---
 
-<MainLayout title="CCA AI Agent – Capt. Tano">
+<MainLayout title="CCA AI Agent">
   <MainSection
-    title="Meet Capt. Tano – Your AI Assistant"
-    subTitle="Use the AI agent below to get support, ask questions, or request assessment services from the Center for Competency Assessment."
+    title="Talk to Capt. Tano – Your CCA Assistant"
+    subTitle="Need help requesting assessments, managing MAAP-SEAS accounts, or retrieving assessment records? Our AI agent is here 24/7 to assist you. Just type your question or request below."
     btnExists={false}
   />
 
-  <section class="flex justify-center items-center min-h-[700px] px-4 py-8">
+  <section class="my-10 flex justify-center">
     <iframe
       id="JotFormIFrame-0195da88a12f709ba586ecda4f87e62878eb"
       title="Capt. Tano - CCA AI Agent"
@@ -19,8 +19,19 @@ import MainSection from "@components/sections/MainSection.astro";
       allow="geolocation; microphone; camera; fullscreen"
       src="https://agent.jotform.com/0195da88a12f709ba586ecda4f87e62878eb?embedMode=iframe&background=1&shadow=1"
       frameborder="0"
-      style="min-width:100%; max-width:100%; height:688px; border:none; width:100%;"
+      style="
+        min-width: 100%;
+        max-width: 100%;
+        height: 700px;
+        border: none;
+        width: 100%;
+      "
       scrolling="no"
     ></iframe>
   </section>
+
+  <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+  <script>
+    window.jotformEmbedHandler("iframe[id='JotFormIFrame-0195da88a12f709ba586ecda4f87e62878eb']", "https://www.jotform.com");
+  </script>
 </MainLayout>
