@@ -21,6 +21,11 @@ export const Icons = {
     width: 48,
     height: 48,
     viewBox: "0 -960 960 960",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
   },
   verified: {
     paths: [
@@ -33,6 +38,11 @@ export const Icons = {
     width: 48,
     height: 48,
     viewBox: "0 -960 960 960",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
   },
   frame: {
     paths: [
