@@ -1,11 +1,16 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
-
-const pageTitle = "CCA AI Agent – Capt. Tano";
+import MainSection from "@components/sections/MainSection.astro";
 ---
 
-<MainLayout title={pageTitle}>
-  <section class="flex justify-center items-center min-h-screen bg-neutral-100 dark:bg-neutral-900 px-4 py-8">
+<MainLayout title="CCA AI Agent – Capt. Tano">
+  <MainSection
+    title="Meet Capt. Tano – Your AI Assistant"
+    subTitle="Use the AI agent below to get support, ask questions, or request assessment services from the Center for Competency Assessment."
+    btnExists={false}
+  />
+
+  <section class="flex justify-center items-center min-h-[700px] px-4 py-8">
     <iframe
       id="JotFormIFrame-0195da88a12f709ba586ecda4f87e62878eb"
       title="Capt. Tano - CCA AI Agent"
