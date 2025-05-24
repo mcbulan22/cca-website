@@ -29,15 +29,16 @@ import MainSection from "../components/ui/blocks/MainSection.astro";
       scrolling="no"
     ></iframe>
   </section>
-  
+
   <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
   <script is:inline>
-  if (typeof window !== "undefined" && "jotformEmbedHandler" in window) {
-    (window as any).jotformEmbedHandler(
+  if (typeof window !== "undefined" && window.jotformEmbedHandler) {
+    window.jotformEmbedHandler(
       "iframe[id='JotFormIFrame-0195da88a12f709ba586ecda4f87e62878eb']",
       "https://www.jotform.com"
     );
   }
   </script>
+
 
 </MainLayout>
